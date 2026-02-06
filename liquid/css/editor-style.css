@@ -1,0 +1,95 @@
+@charset "utf-8";
+/*
+Author: LIQUID DESIGN Ltd.
+Author URI: https://lqd.jp/
+*/
+.editor-styles-wrapper, .editor-post-title__input {
+    font-family: Verdana, "游ゴシック Medium", "Yu Gothic Medium", YuGothic, "游ゴシック体", sans-serif;
+}
+.wp-block {
+    max-width: 855px;
+}
+.editor-post-title__block .editor-post-title__input a, .editor-block-list__layout a {
+    text-decoration: underline;
+}
+h1, h2 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+figure.wp-block-image {
+    margin-bottom: 1rem;
+}
+hr {
+    border-width: 2px;
+    clear: both;
+}
+hr.is-style-wide {
+    max-width: 100%;
+    margin-left: -50%;
+    margin-right: -50%;
+}
+legend {
+    font-size: inherit;
+}
+.collapse {
+    display: block !important;
+}
+button, input {
+    overflow: hidden;
+}
+.d-none, .d-sm-none, .d-md-none, .d-lg-none, .d-xl-none {
+    display: block !important;
+    border: 3px dashed #ccd0d4;
+    opacity: 0.5;
+}
+table.d-none, table.d-sm-none, table.d-md-none, table.d-lg-none, table.d-xl-none {
+    display: table !important;
+}
+/* align */
+[data-align="full"] {
+    position: relative;
+    width: 102%;
+    max-width: 102% !important;
+    left: 50%;
+    right: 50%;
+    margin-left: -51% !important;
+    margin-right: -51% !important;
+    clear: both;
+}
+.wp-block-image[data-align="full"] img {
+    width: 100vw;
+    max-width: initial;
+}
+[data-align="full"].wp-block-pullquote {
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+[data-align="wide"] {
+    width: calc( 855px + 2rem);
+    max-width: calc( 855px + 2rem);
+    left: calc( ( 100% - 855px ) / 2 - 1rem );
+}
+@media (min-width: 768px) {
+	.wp-block-group[data-align="full"] > div[class*="group"] {
+		max-width: 720px;
+	}
+}
+@media (min-width: 992px) {
+	.wp-block-group[data-align="full"] > div[class*="group"] {
+		max-width: 960px;
+	}
+}
+@media (min-width: 1200px) {
+	.wp-block-group[data-align="full"] > div[class*="group"] {
+		max-width: 1140px;
+	}
+}
+.wp-block-group[data-align="full"] > div[class*="group"] {
+    width: 100%;
+    padding: 2rem 15px 1rem 15px;
+    margin: 0 auto;
+}
